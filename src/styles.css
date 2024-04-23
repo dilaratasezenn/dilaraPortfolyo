@@ -1,1 +1,46 @@
+
+body{
+    background-color:  #24292e;
+}
+.bg-primary{
+    background-color: #4b61d1 !important;
+}
+
+.dilara-picture{
+    max-width: 50%;
+    border-radius: 50%;
+    
+}
+
+.heading{
+    margin-top: 20%;
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .heading{
+      font-size: 1.5rem; /* Küçük ekranlarda metni küçült */
+    }
+  }
+
+.name{
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .name{
+      font-size: 1rem; /* Küçük ekranlarda metni küçült */
+    }
+  }
+
+  .meaning{
+    font-size:2rem ;
+  }
+  @media (max-width: 768px) {
+    .meaning{
+      font-size: 0.8rem; /* Küçük ekranlarda metni küçült */
+    }
+  }
+  
+
 /* You can add global styles to this file, and also import other style files */
