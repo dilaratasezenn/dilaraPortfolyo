@@ -36,12 +36,12 @@ body{
     }
   }
 
-  .meaning{
+  .description{
     font-size:2rem ;
     color:#fffafa;
   }
   @media (max-width: 768px) {
-    .meaning{
+    .description{
       font-size: 0.8rem; /* Küçük ekranlarda metni küçült */
     }
   }
