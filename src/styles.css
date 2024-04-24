@@ -1,22 +1,36 @@
+:root{
+
+  /*ana renkler*/
+  --gray:#24292e;
+  --green:#3df243;
+  --red:#ed5847;
+  --white:#fffafa;
+  --purple:#4b61d1;
+  --orange:#eda31a;
+
+}
+
+
+
 
 body{
-    background-color:  #24292e;
+    background-color:  var(--gray);
 }
 .bg-primary{
-    background-color: #4b61d1 !important;
+    background-color: var(--purple) !important;
 }
 
 .dilara-picture{
     max-width: 50%;
     border-radius: 50%;
-    box-shadow: 0px 5px  #3df243;
+    box-shadow: 0px 5px var(--green);
     
 }
 
 .heading{
     margin-top: 20%;
     font-size: 4rem;
-    color:#fffafa;
+    color:var(--white);
 }
 
 @media (max-width: 768px) {
@@ -27,7 +41,7 @@ body{
 
 .name{
     font-size: 3rem;
-    color:#fffafa;
+    color:var(--white);
 }
 
 @media (max-width: 768px) {
@@ -38,7 +52,7 @@ body{
 
   .description{
     font-size:2rem ;
-    color:#fffafa;
+    color:var(--white);
   }
   @media (max-width: 768px) {
     .description{
@@ -48,4 +62,4 @@ body{
   
 
 /* You can add global styles to this file, and also import other style files */
- /*color:#ed5847;*/
+ 
