@@ -60,6 +60,24 @@ body{
     }
   }
   
+  .about-title{
+    font-size: 2rem;
+    color: var(--purple);
 
+  }
+.about-description{
+  color: var(--orange);
+}
+  .about-border{
+    border: 5px;
+    border-color: var(--purple);
+    border-style:double;
+    box-shadow:0px 0px 15px  var(--purple);
+   
+
+  }
+
+ 
+   
 /* You can add global styles to this file, and also import other style files */
  
