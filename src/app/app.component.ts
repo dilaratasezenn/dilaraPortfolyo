@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { flipInYAnimation, flipInYOnEnterAnimation } from './animations/flipinY';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  animations:[flipInYAnimation(),flipInYOnEnterAnimation()]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  animationState : boolean = true;
+  animate: any;
+
   title = 'Dilara Taşezen';
   public animatedHeading='';
   public animatedName = '';
@@ -17,8 +21,19 @@ private heading ='Merhaba,';
   private delay = 100;
 
   constructor() {
-    this.animateText();
   }
+
+  ngOnInit(): void {
+    this.animateText();
+    this.animate = () => {
+      this.animationState = false;
+      setTimeout(() => {
+        this.animationState = true;
+      }, 1);
+    }
+  }
+
+
 animateText() {
     if (this.index < this.heading.length) {
       this.animatedHeading += this.heading.charAt(this.index);
@@ -39,4 +54,6 @@ animateText() {
       setTimeout(() => this.animateText(), this.delay);
     }
   }
+
+  
 }
