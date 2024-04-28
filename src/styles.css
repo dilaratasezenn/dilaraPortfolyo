@@ -1,139 +1,116 @@
-:root{
-
+:root {
   /*ana renkler*/
-  --gray:#24292e;
-  --green:#3df243;
-  --red:#ed5847;
-  --white:#fffafa;
-  --purple:#4b61d1;
-  --orange:#eda31a;
-  --light-gray:#414344;
-
+  --gray: #24292e;
+  --green: #3df243;
+  --red: #ed5847;
+  --white: #fffafa;
+  --purple: #4b61d1;
+  --orange: #eda31a;
+  --light-gray: #414344;
 }
 
-
-
-
-body{
-    background-color:  var(--gray);
+body {
+  background-color: var(--gray);
 }
 
-
-
-.bg-success{
+.bg-success {
   background-color: var(--purple) !important;
 }
-.bg-primary{
-    background-color: var(--purple) !important;
+.bg-primary {
+  background-color: var(--purple) !important;
 }
 
-.dilara-picture{
-    max-width: 50%;
-    border-radius: 50%;
-    box-shadow: 0px 5px var(--green);
-   
-    
+.dilara-picture {
+  max-width: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 5px var(--green);
 }
 
-
-.heading{
-    margin-top: 20%;
-    font-size: 4rem;
-    color:var(--white);
-}
-
-@media (max-width: 768px) {
-    .heading{
-      font-size: 1.5rem; /* Küçük ekranlarda metni küçült */
-    }
-  }
-
-.name{
-    font-size: 3rem;
-    color:var(--white);
-    
-}
-
-@media (max-width: 768px) {
-    .name{
-      font-size: 1rem; /* Küçük ekranlarda metni küçült */
-    }
-  }
-
-  .description{
-    font-size:2rem ;
-    color:var(--white);
-  }
-  @media (max-width: 768px) {
-    .description{
-      font-size: 0.8rem; /* Küçük ekranlarda metni küçült */
-    }
-  }
-  
-  .about-title{
-    font-size: 2rem;
-    color: var(--white);
-   
-  }
-.about-description{
+.heading {
+  margin-top: 20%;
+  font-size: 4rem;
   color: var(--white);
 }
-  .about-border{
-    border: 5px ;
-    box-shadow:0px 0px 15px  var(--purple);
-    transition: box-shadow 0.5s;
-    border: none;
-    box-shadow: none;
-    border-radius:10cap;
 
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem; /* Küçük ekranlarda metni küçült */
   }
+}
 
-  .about-border:hover{
-   
-    box-shadow: 0px 0px 15px var(--purple);
+.name {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 1rem; /* Küçük ekranlarda metni küçült */
   }
-   
-  
-  .talent-title{
-    color: var(--white);
-    font-size: 2rem;
-    box-shadow: 0px 5px var(--light-gray);
-   /* text-decoration:2px underline var(--light-gray);*/
-    
+}
+
+.description {
+  font-size: 2rem;
+  color: var(--white);
+}
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.8rem; /* Küçük ekranlarda metni küçült */
   }
-  .talent-list{
-    
-    color: var(--white);
-    list-style:circle;
-    right: 10%;
-   
-  }
-  .progress{
-    height: 10%;
-  }
-  .progress-bar-html{
-    width: 100%;
-    font-size:15px;
-    color:var(--green);
-  }
-  .progress-bar-css{
-    width: 90%;
-    font-size: 15px;
-    color: var(--green);
-  }
-  .progress-bar-bootstrap{
-    width: 70%;
-font-size: 15px;
-color: var(--green);
-  }
-  .progress-bar-angular{
-    width: 50%;
-    font-size: 15px;
-    color: var(--green);
-  }
-  .progress-bar-asp{
-    font-size: 15px;
-    color: var(--green);
-  }
+}
+
+.about-title {
+  font-size: 2rem;
+  color: var(--white);
+}
+.about-description {
+  color: var(--white);
+}
+.about-border {
+  border: 5px;
+  box-shadow: 0px 0px 15px var(--purple);
+  transition: box-shadow 0.5s;
+  border: none;
+  box-shadow: none;
+  border-radius: 10cap;
+}
+
+.about-border:hover {
+  box-shadow: 0px 0px 15px var(--purple);
+}
+
+.talent-title {
+  color: var(--white);
+  font-size: 2rem;
+  box-shadow: 0px 5px var(--light-gray);
+  /* text-decoration:2px underline var(--light-gray);*/
+}
+.talent-list {
+  color: var(--white);
+  list-style: circle;
+  right: 10%;
+}
+.progress {
+  height: 10%;
+}
+.progress-bar-html {
+  font-size: 15px;
+  color: var(--green);
+}
+.progress-bar-css {
+  font-size: 15px;
+  color: var(--green);
+}
+.progress-bar-bootstrap {
+  font-size: 15px;
+  color: var(--green);
+}
+.progress-bar-angular {
+  font-size: 15px;
+  color: var(--green);
+}
+.progress-bar-asp {
+  font-size: 15px;
+  color: var(--green);
+}
 /* You can add global styles to this file, and also import other style files */
- 
