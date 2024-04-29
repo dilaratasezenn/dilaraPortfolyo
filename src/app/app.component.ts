@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  AfterViewInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
 import {
   flipInYAnimation,
   flipInYOnEnterAnimation,
@@ -9,7 +9,12 @@ import {
   styleUrl: './app.component.css',
   animations: [flipInYAnimation(), flipInYOnEnterAnimation()],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit , AfterViewInit {
+ 
+  @ViewChild('col6', { static: false}) col6!: ElementRef;
+  @ViewChild('col6_2', { static: false }) col6_2!: ElementRef;
+ 
+
   animationState: boolean = true;
   animate: any;
 
@@ -22,13 +27,25 @@ export class AppComponent implements OnInit {
   private description = 'web geliştirme alanında kendimi geliştirmekteyim.';
   private index = 0;
   private delay = 100;
- /* progressHtmlValue: number = 0;
-  progressCssValue: number = 0;
-  progressBootstrapValue: number = 0;
-  progressAngularValue: number = 0;
-  progressAspValue: number = 0;*/
 
-  constructor() {}
+  constructor( private renderer: Renderer2) {}
+  ngAfterViewInit() {
+    this.col6.nativeElement.addEventListener('mouseover', () => {
+      this.renderer.setStyle(this.col6.nativeElement, 'background-color', '  #292f35');
+    });
+
+    this.col6.nativeElement.addEventListener('mouseout', () => {
+      this.renderer.setStyle(this.col6.nativeElement, 'background-color', '#24292e');
+    });
+    this.col6_2.nativeElement.addEventListener('mouseover', () => {
+      console.log('girdi')
+      this.renderer.setStyle(this.col6_2.nativeElement, 'background-color', '   #292f35');
+    });
+
+    this.col6_2.nativeElement.addEventListener('mouseout', () => {
+      this.renderer.setStyle(this.col6_2.nativeElement, 'background-color', '#24292e');
+    });
+  }
 
   ngOnInit(): void {
     this.animateText();
@@ -38,6 +55,38 @@ export class AppComponent implements OnInit {
         this.animationState = true;
       }, 1);
     };
+   
+    
+    
+    
+  }
+  animateText() {
+    if (this.index < this.heading.length) {
+      this.animatedHeading += this.heading.charAt(this.index);
+      this.index++;
+      setTimeout(() => this.animateText(), this.delay);
+    } else if (this.index - this.heading.length < this.name.length) {
+      this.animatedName += this.name.charAt(this.index - this.heading.length);
+      this.index++;
+      setTimeout(() => this.animateText(), this.delay);
+    } else if (
+      this.index - this.name.length - this.heading.length <
+      this.description.length
+    ) {
+      this.animatedDescription += this.description.charAt(
+        this.index - this.name.length - this.heading.length
+      );
+      this.index++;
+      setTimeout(() => this.animateText(), this.delay);
+    }
+  }
+}
+/* progressHtmlValue: number = 0;
+  progressCssValue: number = 0;
+  progressBootstrapValue: number = 0;
+  progressAngularValue: number = 0;
+  progressAspValue: number = 0;*/
+
     /*this.skillsNumberIncrease('html',100);
     this.skillsNumberIncrease('css',90);
     this.skillsNumberIncrease('bootstrap',70);
@@ -98,25 +147,3 @@ export class AppComponent implements OnInit {
         }, 25);
           break;
     }*/
-  }
-  animateText() {
-    if (this.index < this.heading.length) {
-      this.animatedHeading += this.heading.charAt(this.index);
-      this.index++;
-      setTimeout(() => this.animateText(), this.delay);
-    } else if (this.index - this.heading.length < this.name.length) {
-      this.animatedName += this.name.charAt(this.index - this.heading.length);
-      this.index++;
-      setTimeout(() => this.animateText(), this.delay);
-    } else if (
-      this.index - this.name.length - this.heading.length <
-      this.description.length
-    ) {
-      this.animatedDescription += this.description.charAt(
-        this.index - this.name.length - this.heading.length
-      );
-      this.index++;
-      setTimeout(() => this.animateText(), this.delay);
-    }
-  }
-}
