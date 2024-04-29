@@ -22,11 +22,11 @@ export class AppComponent implements OnInit {
   private description = 'web geliştirme alanında kendimi geliştirmekteyim.';
   private index = 0;
   private delay = 100;
-  progressHtmlValue: number = 0;
+ /* progressHtmlValue: number = 0;
   progressCssValue: number = 0;
   progressBootstrapValue: number = 0;
   progressAngularValue: number = 0;
-  progressAspValue: number = 0;
+  progressAspValue: number = 0;*/
 
   constructor() {}
 
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
         this.animationState = true;
       }, 1);
     };
-    this.skillsNumberIncrease('html',100);
+    /*this.skillsNumberIncrease('html',100);
     this.skillsNumberIncrease('css',90);
     this.skillsNumberIncrease('bootstrap',70);
     this.skillsNumberIncrease('angular',50);
@@ -97,7 +97,7 @@ export class AppComponent implements OnInit {
           }
         }, 25);
           break;
-    }
+    }*/
   }
   animateText() {
     if (this.index < this.heading.length) {

@@ -90,7 +90,23 @@ body {
   list-style: circle;
   right: 10%;
 }
-.progress {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.progress {
   height: 10%;
 }
 .progress-bar-html {
@@ -112,5 +128,5 @@ body {
 .progress-bar-asp {
   font-size: 15px;
   color: var(--green);
-}
+}*/
 /* You can add global styles to this file, and also import other style files */
