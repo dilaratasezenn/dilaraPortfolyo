@@ -1,12 +1,13 @@
 :root {
   /*ana renkler*/
   --gray: #24292e;
-  --green: #3df243;
+  --green: #014a24;
   --red: #ed5847;
   --white: #fffafa;
   --purple: #4b61d1;
   --orange: #eda31a;
-  --light-gray: #414344;
+  --light-gray: #7a7a7a;
+  
 }
 
 body {
@@ -61,16 +62,18 @@ body {
 
 .about-title {
   font-size: 2rem;
-  color: var(--white);
+  color:var(--white);
+  box-shadow: 0px 5px var(--light-gray);
+  
 }
 .about-description {
   color: var(--white);
 }
 .about-border {
   border: 5px;
-  border-color: var(--purple);
+  
   box-shadow: 0px 0px 15px var(--purple);
-  transition: box-shadow 0.5s;
+  transition: box-shadow 1s;
   box-shadow: none;
   
 }
@@ -91,8 +94,22 @@ body {
   right: 10%;
 }
 
+.img-border{
+  margin-right: 5%;
+}
 
+.hello-border{
+  margin-left: 5%;
+}
 
+.border-transition {
+  border: 5px;
+  transition: box-shadow 1s;
+  box-shadow: none;
+}
+.border-transition:hover {
+  box-shadow: 0px 0px 15px var(--purple);
+}
 
 
 

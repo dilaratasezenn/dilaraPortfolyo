@@ -1,16 +1,16 @@
 <div class="container">
-  <div class="row text-center">
-    <div class="col-6 border border-success">
+  <div class="d-flex justify-content-between mt-4 mr-3 text-center">
+    <div #col6 class="col-5 hello-border border-transition">
       <p class="heading">{{ animatedHeading }}</p>
       <p class="name">{{ animatedName }}</p>
       <p class="description">{{ animatedDescription }}</p>
     </div>
-    <div class="col-6 border border-primary">
+
+    <div #col6_2 class="col-5 img-border border-transition">
       <img
         src="/assets/img/dilara.png"
         alt="dilara"
         class="img-fluid mb-5 dilara-picture"
-        [@flipInY]="animationState"
       />
       <!--
         <img
@@ -21,31 +21,28 @@
       -->
     </div>
   </div>
-  <div class="row mt-5 mb-5">
-    <div class="col-12">
-      <div class="about-border">
-        <p class="about-title text-center">HAKKIMDA</p>
-        <p class="about-description text-center">
-          adsf dgfhljd kşlv cxz stxdyc tfu vygıbuh onıjpmknı obuıvytcrxezstx
-          rdyctfuvy gbıhınojm opkpn ıbuıvy cftydxr tsze txrdy cfuvbgıhonjpmo
-          kpömonıb uvyfc tdrxsez rawd rtfugıyh uojpkoğpkjıhu gyfds trdytf ughıj
-        </p>
-      </div>
+  <div class="mt-5 mb-5">
+    <div class="col-12 about-border border-transition">
+      <p class="about-title text-center">HAKKIMDA</p>
+      <p class="about-description text-center">
+        adsf dgfhljd kşlv cxz stxdyc tfu vygıbuh onıjpmknı obuıvytcrxezstx
+        rdyctfuvy gbıhınojm opkpn ıbuıvy cftydxr tsze txrdy cfuvbgıhonjpmo
+        kpömonıb uvyfc tdrxsez rawd rtfugıyh uojpkoğpkjıhu gyfds trdytf ughıj
+      </p>
     </div>
   </div>
-  <div class="row">
+
+  <div class="col-6 border-transition">
     <p class="talent-title text-center mt-4">Yeteneklerim</p>
-    <div class="col-6">
-      <ul class="talent-list">
-        <li class="mb-4">HTML</li>
-        <li class="mb-4">CSS</li>
-        <li class="mb-4">Bootstrap</li>
-        <li class="mb-4">Angular</li>
-        <li class="mb-4">ASP.NET Boilerplate</li>
-      </ul>
-    </div>
-    <div class="col-6"></div>
+    <ul class="talent-list">
+      <li class="mb-4">HTML</li>
+      <li class="mb-4">CSS</li>
+      <li class="mb-4">Bootstrap</li>
+      <li class="mb-4">Angular</li>
+      <li class="mb-4">GitHub</li>
+    </ul>
   </div>
+  <div class="col-6"></div>
 </div>
 
 <!--<div
