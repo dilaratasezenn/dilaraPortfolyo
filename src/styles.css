@@ -14,12 +14,6 @@ body {
   background-color: var(--gray);
 }
 
-.bg-success {
-  background-color: var(--purple) !important;
-}
-.bg-primary {
-  background-color: var(--purple) !important;
-}
 
 .dilara-picture {
   max-width: 50%;
@@ -60,12 +54,9 @@ body {
   }
 }
 
-.about-title {
-  font-size: 2rem;
-  color:var(--white);
-  box-shadow: 0px 5px var(--light-gray);
+
   
-}
+
 .about-description {
   color: var(--white);
 }
@@ -82,12 +73,7 @@ body {
   box-shadow: 0px 0px 15px var(--purple);
 }
 
-.talent-title {
-  color: var(--white);
-  font-size: 2rem;
-  box-shadow: 0px 5px var(--light-gray);
-  /* text-decoration:2px underline var(--light-gray);*/
-}
+
 .talent-list {
   color: var(--white);
   list-style: circle;
@@ -111,9 +97,16 @@ body {
   box-shadow: 0px 0px 15px var(--purple);
 }
 
+.title{
+  color: var(--white);
+  font-size: 2rem;
+  box-shadow: 0px 5px var(--light-gray);
+}
 
+.footer{
+  background-color: var(--purple);
 
-
+}
 
 
 
