@@ -94,6 +94,7 @@ body {
   box-shadow: none;
 }
 .border-transition:hover {
+  background-color: #292f35;
   box-shadow: 0px 0px 15px var(--purple);
 }
 

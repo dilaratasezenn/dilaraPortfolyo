@@ -1,4 +1,4 @@
-import { Component, OnInit,  AfterViewInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   flipInYAnimation,
   flipInYOnEnterAnimation,
@@ -9,13 +9,7 @@ import {
   styleUrl: './app.component.css',
   animations: [flipInYAnimation(), flipInYOnEnterAnimation()],
 })
-export class AppComponent implements OnInit , AfterViewInit {
- 
-  @ViewChild('col6', { static: false}) col6!: ElementRef;
-  @ViewChild('col6_2', { static: false }) col6_2!: ElementRef;
-  @ViewChild('col6_3', { static: false }) col6_3!: ElementRef;
-  @ViewChild('col6_4', { static: false }) col6_4!: ElementRef;
-  @ViewChild('col6_5', { static: false }) col6_5!: ElementRef;
+export class AppComponent implements OnInit {
 
   animationState: boolean = true;
   animate: any;
@@ -30,48 +24,7 @@ export class AppComponent implements OnInit , AfterViewInit {
   private index = 0;
   private delay = 100;
 
-  constructor( private renderer: Renderer2) {}
-  ngAfterViewInit() {
-    this.col6.nativeElement.addEventListener('mouseover', () => {
-      this.renderer.setStyle(this.col6.nativeElement, 'background-color', '  #292f35');
-    });
-
-    this.col6.nativeElement.addEventListener('mouseout', () => {
-      this.renderer.setStyle(this.col6.nativeElement, 'background-color', '#24292e');
-    });
-    this.col6_2.nativeElement.addEventListener('mouseover', () => {
-      console.log('girdi')
-      this.renderer.setStyle(this.col6_2.nativeElement, 'background-color', '   #292f35');
-    });
-
-    this.col6_2.nativeElement.addEventListener('mouseout', () => {
-      this.renderer.setStyle(this.col6_2.nativeElement, 'background-color', '#24292e');
-    });
-    this.col6_3.nativeElement.addEventListener('mouseover', () => {
-      console.log('girdi')
-      this.renderer.setStyle(this.col6_3.nativeElement, 'background-color', '   #292f35');
-    });
-
-    this.col6_3.nativeElement.addEventListener('mouseout', () => {
-      this.renderer.setStyle(this.col6_3.nativeElement, 'background-color', '#24292e');
-    });
-    this.col6_4.nativeElement.addEventListener('mouseover', () => {
-      console.log('girdi')
-      this.renderer.setStyle(this.col6_4.nativeElement, 'background-color', '   #292f35');
-    });
-
-    this.col6_4.nativeElement.addEventListener('mouseout', () => {
-      this.renderer.setStyle(this.col6_4.nativeElement, 'background-color', '#24292e');
-    });
-    this.col6_5.nativeElement.addEventListener('mouseover', () => {
-      console.log('girdi')
-      this.renderer.setStyle(this.col6_5.nativeElement, 'background-color', '   #292f35');
-    });
-
-    this.col6_5.nativeElement.addEventListener('mouseout', () => {
-      this.renderer.setStyle(this.col6_5.nativeElement, 'background-color', '#24292e');
-    });
-  }
+  constructor() {}
 
   ngOnInit(): void {
     this.animateText();
