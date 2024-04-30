@@ -103,16 +103,32 @@ body {
   box-shadow: 0px 5px var(--light-gray);
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 1rem; 
+  }
+}
 .footer{
   background-color: var(--purple);
 
 }
 
+.university{
+  color: var(--white);
+  
+  font-size: 120%;
+}
 
+.university-description{
+  color: var(--white);
+font-size: 80%;
+}
 
-
-
-
+@media (max-width: 768px) {
+  .university {
+    font-size: 110%; 
+  }
+}
 
 
 
