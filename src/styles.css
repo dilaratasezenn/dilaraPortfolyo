@@ -61,11 +61,8 @@ body {
   color: var(--white);
 }
 .about-border {
-  border: 5px;
   
-  box-shadow: 0px 0px 15px var(--purple);
   transition: box-shadow 1s;
-  box-shadow: none;
   
 }
 
@@ -89,9 +86,9 @@ body {
 }
 
 .border-transition {
-  border: 5px;
+ 
   transition: box-shadow 1s;
-  box-shadow: none;
+  
 }
 .border-transition:hover {
   background-color: #292f35;
@@ -131,8 +128,22 @@ font-size: 80%;
   }
 }
 
+.footer{
+  background-color: var(--purple);
+}
 
+.icon-transtion{
+  color: var(--white);
+  transition: color 1s;
+  
+}
 
+.icon-transtion :hover{
+  color:var(--orange) ;
+}
+.icon-transtion:active{
+  box-shadow: 0px 0px 15px var(--white);
+}
 /*.progress {
   height: 10%;
 }
