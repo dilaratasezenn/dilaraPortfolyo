@@ -145,27 +145,3 @@ font-size: 80%;
   transition: 0.1s;
 }
 
-/*.progress {
-  height: 10%;
-}
-.progress-bar-html {
-  font-size: 15px;
-  color: var(--green);
-}
-.progress-bar-css {
-  font-size: 15px;
-  color: var(--green);
-}
-.progress-bar-bootstrap {
-  font-size: 15px;
-  color: var(--green);
-}
-.progress-bar-angular {
-  font-size: 15px;
-  color: var(--green);
-}
-.progress-bar-asp {
-  font-size: 15px;
-  color: var(--green);
-}*/
-/* You can add global styles to this file, and also import other style files */
