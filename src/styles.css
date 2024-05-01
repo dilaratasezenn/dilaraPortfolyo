@@ -5,6 +5,7 @@
   --purple: #4b61d1;
   --light-gray: #32383f;
   --orange: #eda31a;
+  --purple-light: #6474c4;
 }
 
 body {
@@ -134,14 +135,16 @@ font-size: 80%;
  
 }
 
-.icon-transtion :hover{
-  color:var(--orange) ;
-  transition: 2s;
+.icon-transtion:hover{
+  color: var(--purple);
+  transition: 1s;
 }
-.icon-active:active{
-  color: greenyellow;
-  transition: 0.2s;
+.icon-transtion:active
+{
+  color: var(--purple-light);
+  transition: 0.1s;
 }
+
 /*.progress {
   height: 10%;
 }
