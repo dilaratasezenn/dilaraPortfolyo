@@ -1,13 +1,10 @@
 :root {
   /*ana renkler*/
   --gray: #24292e;
-  --green: #014a24;
-  --red: #ed5847;
   --white: #fffafa;
   --purple: #4b61d1;
+  --light-gray: #32383f;
   --orange: #eda31a;
-  --light-gray: #7a7a7a;
-  
 }
 
 body {
@@ -134,15 +131,16 @@ font-size: 80%;
 
 .icon-transtion{
   color: var(--white);
-  transition: color 1s;
-  
+ 
 }
 
 .icon-transtion :hover{
   color:var(--orange) ;
+  transition: 2s;
 }
-.icon-transtion:active{
-  box-shadow: 0px 0px 15px var(--white);
+.icon-active:active{
+  color: greenyellow;
+  transition: 0.2s;
 }
 /*.progress {
   height: 10%;
