@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   public animatedDescription = '';
   private heading = 'Merhaba,';
   private name = 'ben Dilara Taşezen';
-  private description = 'web geliştirme alanında kendimi geliştirmekteyim.';
+  private description = 'Front-end developer';
   private index = 0;
   private delay = 100;
 
