@@ -167,6 +167,16 @@ border-radius:10cap ;
 .text-secondary{
   color:var(--gray-midtone)!important;
 }
+::-webkit-scrollbar{
+ 
+  width: 10px;
+  
+}
+::-webkit-scrollbar-thumb{
+  background: var(--light-gray);
+  border-radius: 10cap;
+}
+
 /*.progress {
   height: 10%;
 }
